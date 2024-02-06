@@ -4,9 +4,9 @@ import numpy as np
 
 groups = ['Women', 'Men']
 data = {
-        'Average Gender Split':  {'Advertising Industry Average': [49, 51], 'TW': [57, 43]},
-        'Creative Roles Gender Split':        {'Advertising Industry Average': [29, 71], 'TW': [0, 100]},
-        'Admin Roles Gender Split':           {'Advertising Industry Average': [70, 30], 'TW': [100, 0]}
+        'Average Gender Split':  {'Advertising Industry Average': [49, 51], 'Anon Co.': [57, 43]},
+        'Creative Roles Gender Split':        {'Advertising Industry Average': [29, 71], 'Anon Co.': [0, 100]},
+        'Admin Roles Gender Split':           {'Advertising Industry Average': [70, 30], 'Anon Co.': [100, 0]}
         }
 # Average Gender Split
 df = pd.DataFrame(data)
@@ -28,7 +28,7 @@ for i, row_name in enumerate(df.index):
 ax_flat[0].set_title('Average Gender Split in UK \n Creative Agencies', fontsize=18)
 ax_flat[1].set_title('Creative Roles Gender Split -\nAdvertising Industry Average', fontsize=18)
 ax_flat[2].set_title('Admin Roles Gender Split -\nAdvertising Industry Average', fontsize=18)
-ax_flat[3].set_title('Average Gender Split at TW', fontsize=18)
+ax_flat[3].set_title('Average Gender Split at Anon Co.', fontsize=18)
 
 ax_flat[2].legend(['Women', 'Men'])
 # fig.legend(wedges, groups)
